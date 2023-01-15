@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/responsive.css">
+    
+    <title>Frontend Mentor | News homepage</title>
+
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1 id="header-title">W.</h1>
+        <div class="hamburger">
+          <span class="line" id="line1"></span>
+          <span class="line" id="line2"></span>
+          <span class="line" id="line3"></span>
+        </div>
+        <ul id="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">New</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">Popular</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">Trending</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">Categories</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="section-highlight">
+          <img id="section-highlight__image" src="./assets/images/image-web-3-desktop.jpg" alt="Geometry forms">
+          <h2 id="section-highlight__title">The Bright Future of Web 3.0?</h2>
+          <div id="section-highlight__read-more">
+            <p id="section-highlight__paragraph">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?</p>
+            <a id="section-highlight__button" href="#">
+              Read more
+            </a>
+          </div>
+          
+          <div id="div-news">
+            <h2>New</h2>
+            <div class="div-news__new">
+              <h3 class="div-news__new-title">Hydrogen VS Electric Cars</h3>
+              <p class="div-news__new-paragraph">
+                Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <hr>
+            <div class="div-news__new">
+              <h3 class="div-news__new-title"> The Downsides of AI Artistry</h3>
+              <p class="div-news__new-paragraph">
+                What are the possible adverse effects of on-demand AI image generation?</p>
+            </div>
+            <hr>
+            <div class="div-news__new">
+              <h3 class="div-news__new-title">Is VC Funding Drying Up?</h3>
+              <p class="div-news__new-paragraph">
+                Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+          </div>
+      </section>
+      <section id="section-topics">
+        <div class="card">
+          <img class="card-image" src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs">
+          <div class="card-desc">
+            <h2 class="card-number">01</h2>
+            <h3 class="card-title">Reviving Retro PCs</h3>
+            <p class="card-paragraph">What happens when old PCs are given modern upgrades?</p>
+          </div> 
+        </div>
+        <div class="card">
+          <img class="card-image" src="./assets/images/image-top-laptops.jpg" alt="Keyboard RGB">
+          <div class="card-desc">
+            <h2 class="card-number">02</h2>
+            <h3 class="card-title">Top 10 Laptops of 2022</h3>
+            <p class="card-paragraph">Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-image" src="./assets/images/image-gaming-growth.jpg" alt="Playstation control">
+          <div class="card-desc">
+            <h2 class="card-number">03</h2>
+            <h3 class="card-title">The Growth of Gaming</h3>
+            <p class="card-paragraph"> How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/scripts/hamburger-menu.js"></script>
+  </body>
+</html>
