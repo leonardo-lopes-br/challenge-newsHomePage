@@ -27,6 +27,11 @@
         transition: transform 0.7s;
     }
 
+    .hamburger-active {
+        position: fixed;
+        right: 8px;
+    }
+
     .hamburger-active #line1 {
         transform: rotate(45deg) translate(0px, 13px);
     }
@@ -41,20 +46,27 @@
     }
 
 
-    #navbar-list {
+    #navbar-list.hidden {
         flex-direction: column;
-        display: none;
+        width: 0;
+        overflow: hidden;
+        position: absolute;
+        right: -200px;
+        transition: right 1s;
     }
 
     #navbar-list.show-menu {
         display: flex;
-        position: absolute;
+        position: fixed;
+        right: 0;
         background-color: hsl(240, 100%, 5%);
         top: 0;
-        width: 100%;
+        width: 70vw;
+        height: 60vh;
         z-index: 2;
-        padding: 20px 0;
+        padding: 100px 0;
         align-items: center;
+        gap: 40px;
     }
 
     .navbar-link {
